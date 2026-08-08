@@ -192,8 +192,8 @@ def verify():
         ),
 
         matched_image_url=(
-            f"/media/dataset/{analysis["matched_variant"]}"
-            if analysis['matched_variant']
+            f"/media/dataset/{analysis['matched_variant']}"
+            if analysis["matched_variant"]
             else None
         ),
     )
