@@ -193,9 +193,15 @@ def verify():
 
         matched_image_url=(
             f"/media/dataset/{analysis["matched_variant"]}"
-            if analysis["matched_variant"]
+            if analysis['matched_variant']
             else None
         ),
+    )
+if __name__ == "__main__":
+    import os
+    app.run(
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 5000))
     )
 
 
